@@ -128,7 +128,8 @@ body{
     width: 100%;
     background-color: var(--foocolor);
     display: flex;
-    background-image: url(../img/Iemg.jpg);
+    background-image: url(../img/Iemg.jpg),linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -906,10 +907,14 @@ footer{
 
 .label__input:hover, .label__input:focus,
 .modal__label:hover, .modal__label:focus,
-.label__comment:hover, .label__comment:focus{
+.label__icon:hover, .label__icon:focus,
+.label__comment:hover, .label__comment:focus {
     border-color: var(--actcolor);
     fill: var(--actcolor);
 }
 .modal__close:hover, .modal__close:focus{
     fill: var(--actcolor);
+}
+.label__input:focus + svg, .label__input:hover + svg { 
+    fill: #2196f3;
 }
