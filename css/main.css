@@ -128,7 +128,7 @@ body{
     width: 100%;
     background-color: var(--foocolor);
     display: flex;
-    background-image: url(/img/Iemg.jpg);
+    background-image: url(../img/Iemg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -901,4 +901,15 @@ footer{
     cursor: pointer;
     width: 200px;
     height: 50px;
+}
+
+
+.label__input:hover, .label__input:focus,
+.modal__label:hover, .modal__label:focus,
+.label__comment:hover, .label__comment:focus{
+    border-color: var(--actcolor);
+    fill: var(--actcolor);
+}
+.modal__close:hover, .modal__close:focus{
+    fill: var(--actcolor);
 }
